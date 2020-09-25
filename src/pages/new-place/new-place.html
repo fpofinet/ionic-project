@@ -1,0 +1,36 @@
+<!--
+  Generated template for the NewPlacePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>Ajouter une Place</ion-title>
+    <button ion-button menuToggle="">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <form #f="ngForm" (ngSubmit)="onAddPlace(f.value)">
+      <ion-item>
+        <ion-label >Titre : </ion-label>
+        <ion-input type="text" name="title" ngModel required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >Pays : </ion-label>
+        <ion-input type="text" name="pays"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >Ville : </ion-label>
+        <ion-input type="text"  name="ville"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >Mot Clés : </ion-label>
+        <ion-input type="text" name="motCle"></ion-input>
+      </ion-item>
+      <button ion-button block type="submit">Sauvegarder</button>
+    </form>
+</ion-content>

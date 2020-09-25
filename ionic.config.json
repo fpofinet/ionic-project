@@ -1,0 +1,7 @@
+{
+  "name": "GApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
