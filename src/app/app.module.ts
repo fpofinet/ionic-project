@@ -17,7 +17,9 @@ import { NewPlacePage } from '../pages/new-place/new-place';
 import { IonicStorageModule } from '@ionic/storage';
 import { Geolocation } from '@ionic-native/geolocation';
 import { DetailPlacePage } from '../pages/detail-place/detail-place';
-//import { AgmCoreModule } from '@agm/core/core.module';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+//import { AgmCoreModule } from '@agm/core';
+
 
 
 
@@ -61,11 +63,13 @@ import { DetailPlacePage } from '../pages/detail-place/detail-place';
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GalleryProvider,
     MeteoProvider,
     PlaceProvider,
-    Geolocation
+    Geolocation,
+    
   ]
 })
 export class AppModule {}
